@@ -1,0 +1,23 @@
+Freeswitch Debian Installer
+Author: Brian Foster (with help from the FreeSWITCH wiki and mailing lists)
+This installer is known to work with Debian 6.0/Squeeze. It is not tested
+for any other Debian version or Debian-based distro, although it could work...
+
+Questions, Comments, Concerns? Email freeswitch-installer@endigotech.com
+
+Latest Stable: v1.0.4
+
+At the end of this script, the outcome will be that:
+- System environment is set up for FS use
+- Proper user/group is created and permissions set properly for /usr/local/freeswitch/
+- FS is installed properly (currently only git HEAD) <--Please open a issue on github if this
+  is not what you want
+- MOH and callie's prompts are installed (in every available format/bitrate/etc.)
+
+This install script is ment for use by system integrators looking for a way to automate their
+processes by giving them a template of how installs should be done. It can also be used by
+our budding FS users to setup a FS environment recommended by the community as a whole.
+
+Feedback is always appreciated. Please open an issue on github 
+(http://github.com/bdfoster/fs-debian-installer/issues) if you find any bugs or if you have
+an idea that would make this script more useful for you. 
