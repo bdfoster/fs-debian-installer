@@ -5,7 +5,7 @@ for any other Debian version or Debian-based distro, although it could work...
 
 Questions, Comments, Concerns? Email freeswitch-installer@endigotech.com
 
-Latest Stable: v1.0.0
+Latest Stable: N/A (there is no stable branch, yet)
 
 At the end of this script, the outcome will be that:
 - System environment is set up for FS use
