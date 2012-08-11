@@ -55,7 +55,7 @@ FS_USER="freeswitch"
 FS_GROUP="daemon"
 
 # FreeSWITCH Init Script Install (Default: true; Options; true, false)
-INSTALL_FS_INIT="true"
+INSTALL_FS_INIT="false"
 
 # FreeSWICH Init Script Location (Default: http://files.endigovoip.com/freeswitch/resources/freeswitch_init.sh)
 FS_INIT_LOC="http://files.endigovoip.com/freeswitch/resources/freeswitch_init.sh"
