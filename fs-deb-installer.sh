@@ -24,66 +24,7 @@
 # =================================================================================
 
 
-# Changelog
-# =================================================================================
-# 0.0.4 24/Mar/2012 0012 UCT
-#
-#	Bug Fixes
-#	- Made fs_cli a symbolic link instead of a hard link into /usr/bin
-#	Features Added
-#	- Added some testing variables so I don't have to build everytime I test
-#	- Added function to update config files and tar.gz them to a location you
-#	specify
-#	- Added function to update FreeSWITCH (run ./fs-debian-installer update-fs)
-#	- Added function to remove FreeSWITCH entirely (run ./fs-debian-installer
-#	remove-fs)
-#	- Added function to backup configuration files (run ./fs-debian-installer
-#	backup-fs-configs)
-# ---------------------------------------------------------------------------------
-# 0.0.3 23/Mar/2012 1235 UCT
-#
-#	Bug Fixes
-#	- Changed script shell from bash to sh for compatability
-#	Features Added
-#	-Made FS git address, FS user, FS group,  installed packages, FS sounds
-#	install, FS MOH install, and base dir for source folder into variables
-#	- Option added to update/upgrade system (true/false variable)
-#	- Option to download/install init script
-# ---------------------------------------------------------------------------------
-# 0.0.2 22/Mar/2012 1223 UCT
-#
-#	Bug Fixes
-#	- Changed Format of Changelog
-#	- Using 'clear|reset' instead of just 'clear' for compatibility's sake*
-#	- Added -sf to 'ln' command for fs_cli symbolic link*
-#	- Init script was relocated on server, link was updated
-#	- Took out 'clear' before end msg so that the user can scroll
-#	through the logs
-#	- Reformatted the ending message
-#	Features Added
-#	- Added check to make sure this script runs as the user 'root'*
-#	- Added check to see if the user 'freeswitch' already exists*
-#	- Made MOH download by default
-#	* == Thanks to Marcus Brown for guidance on these fixes/features!
-# ----------------------------------------------------------------------------------
-# 0.0.1 22/Mar/2012 0426 UCT (First Version)
-#
-# 	Accomplishes the following goals:
-# 	- Create Source Directory (/usr/local/src)
-#	- Downloads FreeSWITCH from git-head to /usr/local/src/freewitch
-# 	- Runs bootstrap.sh/configure
-# 	- Runs make/make install/make cd-sounds-install
-# 	- Downloads init script (from an Endigo server located at files.endigovoip.com)
-# 	- Installs Init Script
-# 	- Sets permissions for /usr/local/freeswitch (created when building source)
-# 	- Adds user/group for FreeSWITCH
-# 	- Makes fs_cli a system command
-# 	Notes:
-# 	Please be aware that this is the first release. This script does not
-# 	(currently) do ANY sort of error checking.
-# ===================================================================================
-
-# ==User Settings====================================================================
+# ==User Settings==================================================================
 
 # Update/Upgrade System at install time (Default: true; Options: true, false)
 UPDATE_SYS="true"
