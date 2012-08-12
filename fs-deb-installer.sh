@@ -31,7 +31,7 @@ UPDATE_SYS="true"
 
 # Packages to install
 PKGS="git-core build-essential autoconf automake libtool libncurses5 libncurses5-dev make libjpeg-dev \
-        pkg-config unixodbc unixodbc-dev libcurl4-openssl-dev libexpat1-dev libgnutls-dev libtiff4-dev \
+        pkg-config unixodbc unixodbc-dev libcurl4-openssl-dev libexpat1-dev libtiff4-dev \
 	libx11-dev unixodbc-dev libssl-dev python2.6-dev zlib1g-dev libzrtpcpp-dev libasound2-dev \
 	libogg-dev libvorbis-dev libperl-dev libgdbm-dev libdb-dev python-dev uuid-dev bison"
 
