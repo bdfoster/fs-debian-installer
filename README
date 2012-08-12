@@ -5,7 +5,8 @@ for any other Debian version or Debian-based distro, although it could work...
 
 Questions, Comments, Concerns? Email freeswitch-installer@endigotech.com
 
-Latest Stable: N/A (there is no stable branch, yet)
+Latest Stable Version: v0.1.0
+Latest Stable Branch: v0.1.stable 
 
 At the end of this script, the outcome will be that:
 - System environment is set up for FS use
@@ -13,6 +14,16 @@ At the end of this script, the outcome will be that:
 - FS is installed properly (currently only git HEAD) <--Please open a issue on github if this
   is not what you want
 - MOH and callie's prompts are installed (in every available format/bitrate/etc.)
+
+Misc. Functions:
+./fs-debian-installer.sh <function>
+
+* update-fs: Shuts down FS, does a make current
+* update-fs-alt: Re-bootstrap/Re-configure, then does a make current
+* backup-fs-configs: backs up everything under /../conf/ to a location
+  you specify (set $BACKUP_FS_CONFIGS_LOC in the script)
+* remove-fs: Shuts down FS, removes /usr/local/freeswitch and the FS source
+  folder
 
 This install script is ment for use by system integrators looking for a way to automate their
 processes by giving them a template of how installs should be done. It can also be used by

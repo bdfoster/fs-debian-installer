@@ -140,7 +140,9 @@ if [ "$FUNCTION" = "remove-fs" ]
     echo "I'm giving you 15 seconds to do this..."
     sleep 15s
     echo "OK, commencing FreeSWITCH removal!"
-    sleep 1s
+    sleep 5s
+    echo "Shutting Down FS (if using init script)"
+    service freeswitch stop
     echo "Removing Source Folder..."
     rm -r $SRC_FLDR
     echo "Removing /usr/local/freeswitch..."
