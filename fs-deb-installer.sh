@@ -44,8 +44,8 @@ FS_GIT_BRANCH="v1.2.stable"
 # Source Folder (Default: /usr/local/src/)
 SRC_FLDR="/usr/local/src/"
 
-# Manually select modules (Default: true; Options: true, false)
-MANUALLY_SELECT_MODULES="true"
+# Manually select modules (Default: false; Options: true, false)
+MANUALLY_SELECT_MODULES="false"
 
 # Sounds Install (Default: cd; Options: cd-sounds-install, uhd-sounds-install, hd-sounds-install, sounds-install, false)
 SOUNDS="false"
