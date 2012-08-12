@@ -38,6 +38,9 @@ PKGS="git-core build-essential autoconf automake libtool libncurses5 libncurses5
 # FreeSWITCH Git Repo (Default: git://git.freeswitch.org/freeswitch.git)
 FS_GIT="git://git.freeswitch.org/freeswitch.git"
 
+# FreeSWITCH Git Branch (Default: v1.2.stable)
+FS_GIT_BRANCH="v1.2.stable"
+
 # Source Folder (Default: /usr/local/src/)
 SRC_FLDR="/usr/local/src/"
 
@@ -160,13 +163,15 @@ if [ "$UPDATE_SYS" = "true" ]
 echo "Installing Required Packages via apt-get..."
 apt-get install $PKGS
 
-# Download FreeSWITCH from git (1.0.head)
+# Download FreeSWITCH from git
 echo "Now Downloading FreeSWITCH Source..."
 cd $SRC_FLDR
 git clone $FS_GIT
+cd freeswitch
+echo "Switching to ${FS_GIT_BRANCH} branch of ${FS_GIT}"
+git checkout $FS_GIT_BRANCH
 
 # Change Directory and run bootstrap
-cd freeswitch
 if [ "$SKIP_FS_BOOTSTRAP" = "true" ]
   then
     echo "Skipping Bootstrap..."
