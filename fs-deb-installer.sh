@@ -48,10 +48,10 @@ SRC_FLDR="/usr/local/src/"
 MANUALLY_SELECT_MODULES="false"
 
 # Sounds Install (Default: cd; Options: cd-sounds-install, uhd-sounds-install, hd-sounds-install, sounds-install, false)
-SOUNDS="false"
+SOUNDS="cd-sounds-install"
 
 # Music On Hold Install (MOH) (Default: cd; Options: cd-moh-install, uhd-moh-install, hd-moh-install, sounds-install, false)
-MOH="false"
+MOH="cd-moh-install"
 
 # FreeSWITCH User/Group (Default: freeswitch:daemon)
 FS_USER="freeswitch"
