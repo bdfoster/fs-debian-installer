@@ -61,7 +61,7 @@ FS_GROUP="daemon"
 INSTALL_FS_INIT="false"
 
 # FreeSWICH Init Script Location (Default: http://files.endigovoip.com/freeswitch/resources/freeswitch_init.sh)
-FS_INIT_LOC="http://files.endigovoip.com/freeswitch/resources/freeswitch_init.sh"
+FS_INIT_LOC=""
 
 # Freeswitch Backup-to Location (Default: fs-conf-backup.tar.gz, can be any path but currently has to be tar.gz)
 BACKUP_FS_CONFIGS_LOC="fs-conf-backup.tar.gz"
