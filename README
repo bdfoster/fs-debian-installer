@@ -10,8 +10,7 @@ Questions, Comments, Concerns? Email freeswitch-installer@endigotech.com
 At the end of this script, the outcome will be:
 - System environment is set up for FS use
 - Proper user/group is created and permissions set properly for /usr/local/freeswitch/
-- FS is installed properly (currently only git HEAD) <--Please open a issue on github if this
-  is not what you want
+- FS is installed properly (default is v1.2.stable branch, wiki recommended procedure)
 - MOH and callie's prompts are installed (in every available format/bitrate/etc.)
 
 Misc. Functions:
