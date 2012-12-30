@@ -2,27 +2,15 @@
 
 # Freeswitch Debian Installer
 # Author: Brian Foster (with help from the FreeSWITCH wiki and mailing lists)
-# Version 0.0.4
+# Version 0.0.5
 # This installer is known to work with Debian 6.0/Squeeze. It is not tested
 # for any other Debian version or Debian-based distro, although it could work...
 
 # Questions, Comments, Concerns? Email freeswitch-installer@endigotech.com
 
-# ================================================================================
-# Licensed under the Endigo Plain Language OS License v0.0.1 (EPLOS License)
-# Below serves as your copy of the license (it's really simple).
-# 	This software can be used by anyone for personal or commercial use.
-#	Our only requests are as follows:
-#	1) Please keep the lines naming the project, version, author, and contact
-#	information.
-#	2) If you decide to change this piece of software, it's strongly
-#	recommended that you send the patch to the author, as it may be potentially
-#	useful for others.
-#	3) If you use this piece of software for another open source project or
-#	commercial uses, we'd like to hear about it. Makes us feel all warm and
-#	fuzzy inside, ya know?
-# =================================================================================
-
+# Licensed under EPLOS v0.1.0. You should have received a copy of this license
+# when you aquired this piece of software. If not, a copy of the EPLOS License
+# is available at http://endigovoip.com/eplos/commit/2/
 
 # ==User Settings==================================================================
 
@@ -58,10 +46,10 @@ FS_USER="freeswitch"
 FS_GROUP="daemon"
 
 # FreeSWITCH Init Script Install (Default: true; Options; true, false)
-INSTALL_FS_INIT="false"
+INSTALL_FS_INIT="true"
 
-# FreeSWICH Init Script Location (Default: http://files.endigovoip.com/freeswitch/resources/freeswitch_init.sh)
-FS_INIT_LOC="http://files.endigovoip.com/freeswitch/resources/freeswitch_init.sh"
+# FreeSWICH Init Script Location (Default: http://fs-debian-installer.endigovoip.com/resources/freeswitch_init.sh)
+FS_INIT_LOC="http://fs-debian-installer.endigovoip.com/resources/freeswitch_init.sh"
 
 # Freeswitch Backup-to Location (Default: fs-conf-backup.tar.gz, can be any path but currently has to be tar.gz)
 BACKUP_FS_CONFIGS_LOC="fs-conf-backup.tar.gz"
@@ -282,7 +270,7 @@ echo
 echo "To learn more about how to handle FreeSWITCH, see wiki.freeswitch.org, AND"
 echo "IRC help is always available at #freeswitch on the Freenode network, AND"
 echo "Check out the mailing lists... lists.freeswitch.org."
-echo "Don't forget to register for ClueCon this August, see cluecon.com"
+echo "Don't forget to register for ClueCon this August, see http://cluecon.com"
 echo
 echo "Welcome to the FreeSWITCH Community!"
 echo "========================================================================="
