@@ -32,9 +32,6 @@ FS_GIT_BRANCH="v1.2.stable"
 # Source Folder (Default: /usr/local/src/)
 SRC_FLDR="/usr/local/src/"
 
-# Manually select modules (Default: false; Options: true, false)
-MANUALLY_SELECT_MODULES="false"
-
 # Sounds Install (Default: cd; Options: cd-sounds-install, uhd-sounds-install, hd-sounds-install, sounds-install, false)
 SOUNDS="cd-sounds-install"
 
@@ -170,20 +167,6 @@ if [ "$SKIP_FS_BOOTSTRAP" = "true" ]
     ./bootstrap.sh -j
   fi
 
-# Select Modules
-
-if [ "$MANUALLY_SELECT_MODULES" = "true" ]
-  then
-    echo "I'm going to pull up nano, a nice command line editor, so you can pick"
-    echo "and choose the modules that will be installed. Please make sure you"
-    echo "consult wiki.freeswitch.org if you don't know what to do here."
-    echo "Recommended modules are already uncommented. Make sure that when you"
-    echo "close nano that you save it as modules.conf."
-    sleep 7s
-    apt-get install nano
-    nano modules.conf
-    echo "Thanks, we're all set here."
-  fi
 
 # Run Configure
 if [ "$SKIP_FS_CONFIGURE" = "true" ]
@@ -231,6 +214,7 @@ if id $FS_USER >/dev/null 2>&1
   fi
 
 # Set Permissions for /usr/local/freeswitch
+echo "Setting permissions to FS files..."
 chown -R $FS_USER:$FS_GROUP /usr/local/freeswitch/
 chmod -R o-rwx /usr/local/freeswitch/
 
