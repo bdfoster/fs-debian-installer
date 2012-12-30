@@ -1,14 +1,13 @@
 Freeswitch Debian Installer
 Author: Brian Foster (with help from the FreeSWITCH wiki and mailing lists)
 This installer is known to work with Debian 6.0/Squeeze. It is not tested
-for any other Debian version or Debian-based distro, although it could work...
+for any other Debian version or Debian-based distro. Please raise an issue if
+you have tested with another version of Debian or it works with another Debian-
+based distro.
 
 Questions, Comments, Concerns? Email freeswitch-installer@endigotech.com
 
-Latest Stable Version: v0.1.2
-Latest Stable Branch: v0.1.stable 
-
-At the end of this script, the outcome will be that:
+At the end of this script, the outcome will be:
 - System environment is set up for FS use
 - Proper user/group is created and permissions set properly for /usr/local/freeswitch/
 - FS is installed properly (currently only git HEAD) <--Please open a issue on github if this
