@@ -5,9 +5,6 @@ for any other Debian version or Debian-based distro, although it could work...
 
 Questions, Comments, Concerns? Email freeswitch-installer@endigotech.com
 
-Latest Stable Version: v0.1.2
-Latest Stable Branch: v0.1.stable 
-
 At the end of this script, the outcome will be that:
 - System environment is set up for FS use
 - Proper user/group is created and permissions set properly for /usr/local/freeswitch/
